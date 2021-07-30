@@ -35,6 +35,15 @@ task("rescript", async () => {
   );
 });
 
+task("build", ["rescript"], async () => {
+  await exec(
+    `cd ${rootD};
+    \`yarn bin next\` \
+        build \
+    `
+  );
+});
+
 task("dev", "rescript", async () => {
   (jake.Task["nextjs-web:dev"]: Object).startTime = 10 ** 14; // avoid timeout
   // const configFile = path.join(rootD, "src", "config", "webpack.config.js");

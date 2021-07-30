@@ -258,6 +258,7 @@ task("rescript", async () => {
     await invokeWait(jake.Task["service:rescript"]);
     await invokeWait(jake.Task["leaderboard:rescript"]);
     await invokeWait(jake.Task["command:rescript"]);
+    await invokeWait(jake.Task["nextjs-web:rescript"]);
   } catch (e) {}
 });
 
