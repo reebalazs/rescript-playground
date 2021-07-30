@@ -7,7 +7,7 @@ const withTM = require("next-transpile-modules")(transpileModules);
 const isWebpack5 = true;
 const config = {
   target: "serverless",
-  pageExtensions: ["jsx", "js"],
+  pageExtensions: ["js"],
   env: {
     ENV: process.env.NODE_ENV,
   },
@@ -24,6 +24,7 @@ const config = {
         };
       }
 
+      /*
       // We need this additional rule to make sure that mjs files are
       // correctly detected within our src/ folder
       config.module.rules.push({
@@ -35,6 +36,7 @@ const config = {
           fullySpecified: false,
         },
       });
+*/
     }
     return config;
   },

@@ -1,24 +1,25 @@
 {
   "name": "rescript-nextjs-template",
-  "namespace": false,
-  "reason": { "react-jsx": 3 },
-  "refmt": 3,
+  "$schema": "https://raw.githubusercontent.com/rescript-lang/rescript-compiler/master/docs/docson/build-schema.json",
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }
+  ],
+  "package-specs": [
+    {
+      "module": "es6",
+      "in-source": true
+    }
+  ],
+  "suffix": ".bs.js",
+  "namespace": true,
   "bs-dependencies": ["@rescript/react"],
   "ppx-flags": [],
-  "sources": [
-    { "dir": "src", "subdirs": true }
-  ],
-  "package-specs": {
-    "module": "es6",
-    "in-source": true
-  },
-  "suffix": ".mjs",
+  "reason": { "react-jsx": 3 },
   "warnings": {
-    "number": "-3",
-    "error": "+101+8"
+    "error": "+101"
   },
-  "gentypeconfig": {
-    "language": "untyped",
-    "shims": []
-  }
+  "refmt": 3
 }
