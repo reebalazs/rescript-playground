@@ -1,0 +1,2 @@
+*.bs.js    -diff -merge
+*.bs.js    linguist-generated=true

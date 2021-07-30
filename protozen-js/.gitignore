@@ -6,6 +6,5 @@ yarn-error.log
 !_*
 lib
 .merlin
-*.bs.js
 .bsb.lock
 coverage
