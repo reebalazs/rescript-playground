@@ -1,13 +1,14 @@
-protozen
-========
-Enlightened protobuf communication support from Javascript front-ends to Erlang or Golang servers
+# rescript-playground
 
-This project is not doing anything useful at the moment.
+My playground monorepo for learning Rescript.
 
-It can be used as a template for a setup that contains a toolchain for the development of JavaScript
-web front-ends, that use protocol buffers as communication with an Erlang or Golang server.
+Current focuses are:
 
-In the future, it will be further developed to improve protobuf communication with built in pubsub and
-data streaming.
+- A starter app with Rescript and React (get-schwifty)
 
-I am not supporting this code right now, which means that errors will not be fixed for now.
+- A leaderboard app with Rescript and React, headless (no backend)
+
+- A NextJS application with Rescript and React (also combining the other apps)
+  - Deployed on Vercel
+
+I am not supporting this code right now, which means that errors will not be fixed.
