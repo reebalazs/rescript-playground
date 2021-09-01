@@ -1,0 +1,51 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=14.15.0",
+    "yarn": ">=1.17.3"
+  },
+  "scripts": {
+    "rescript:build": "rescript build -with-deps",
+    "rescript:dev": "NINJA_ANSI_FORCED=1 RES_LOG=info rescript build -w -with-deps",
+    "web:build": "yarn workspace @rescript-playground/web build",
+    "get-schwifty:build": "yarn workspace @rescript-playground/get-schwifty build",
+    "leaderboard:build": "yarn workspace @rescript-playground/leaderboard build",
+    "nextjs-web:build": "yarn workspace @rescript-playground/nextjs-web build",
+    "build": "yarn rescript:build && yarn web:build && yarn get-schwifty:build && yarn leaderboard:build && yarn nextjs-web:build",
+    "web:dev": "NINJA_ANSI_FORCED=1 yarn rescript:dev & yarn workspace @rescript-playground/web dev",
+    "get-schwifty:dev": "NINJA_ANSI_FORCED=1 yarn rescript:dev & yarn workspace @rescript-playground/get-schwifty dev",
+    "leaderboard:dev": "NINJA_ANSI_FORCED=1 yarn rescript:dev & yarn workspace @rescript-playground/leaderboard dev",
+    "nextjs-web:dev": "NINJA_ANSI_FORCED=1 yarn rescript:dev & yarn workspace @rescript-playground/nextjs-web dev",
+    "dev": "yarn build && yarn rescript:dev & yarn workspace @rescript-playground/web dev & yarn workspace @rescript-playground/get-schwifty dev & yarn workspace @rescript-playground/leaderboard dev & yarn workspace @rescript-playground/nextjs dev",
+    "test": "yarn jest:run",
+    "jest:run": "yarn jest --coverage",
+    "jest:dev": "yarn jest --watchAll"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.14.5",
+    "@glennsl/bs-jest": "^0.7.0",
+    "async-mutex": "^0.3.1",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "eslint": "^6.5.1",
+    "eslint-plugin-react": "^7.16.0",
+    "jest": "^27.0.6",
+    "jest-cli": "^27.0.6",
+    "rescript": "^9.1.4",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@ryyppy/rescript-promise": "^2.1.0",
+    "bs-css": "^15.0.1",
+    "bs-css-emotion": "^4.0.1",
+    "rescript-logger": "^2.0.0"
+  }
+}
