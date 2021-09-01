@@ -19,7 +19,7 @@ module Navigation = {
         <a
           className="px-3 font-bold"
           target="_blank"
-          href="https://github.com/rescript-playground">
+          href="https://github.com/reebalazs/rescript-playground">
           {React.string("Github")}
         </a>
       </div>
