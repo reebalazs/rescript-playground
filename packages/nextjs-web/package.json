@@ -1,16 +1,16 @@
 {
   "name": "@rescript-playground/nextjs-web",
-  "description": "NextJs example app for protozen",
+  "description": "NextJs example app for rescript-playground",
   "version": "0.1.5",
   "private": true,
   "license": "BSD-3-Clause",
-  "homepage": "https://github.com/reebalazs/protozen",
+  "homepage": "https://github.com/reebalazs/rescript-playground",
   "repository": {
     "type": "git",
-    "url": "git@github.com:reebalazs/protozen.git"
+    "url": "git@github.com:reebalazs/rescript-playground.git"
   },
   "bugs": {
-    "url": "https://github.com/reebalazs/protozen/issues"
+    "url": "https://github.com/reebalazs/rescript-playground/issues"
   },
   "author": "Balazs Ree <ree@greenfinity.hu>",
   "engines": {
