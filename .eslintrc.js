@@ -4,9 +4,13 @@ module.exports = {
     ecmaFeatures: {
       modules: true,
     },
-    extends: ["plugin:flowtype/recommended", "plugin:react/recommended"],
+    extends: [
+      "plugin:@next/next/recommended",
+      "plugin:flowtype/recommended",
+      "plugin:react/recommended",
+    ],
   },
-  plugins: ["flowtype", "react"],
+  plugins: ["flowtype", "react", "@next/next"],
   rules: {
     strict: 0,
     "no-unused-vars": [
