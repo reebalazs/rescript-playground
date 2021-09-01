@@ -1,0 +1,44 @@
+{
+  "name": "@rescript-playground/nextjs-web",
+  "description": "NextJs example app for protozen",
+  "version": "0.1.5",
+  "private": true,
+  "license": "BSD-3-Clause",
+  "homepage": "https://github.com/reebalazs/protozen",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:reebalazs/protozen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/reebalazs/protozen/issues"
+  },
+  "author": "Balazs Ree <ree@greenfinity.hu>",
+  "engines": {
+    "node": ">=14.17.1",
+    "yarn": ">=1.17.3"
+  },
+  "scripts": {
+    "dev": "next",
+    "debug": "NODE_OPTIONS='--inspect' next",
+    "build": "yarn rescript:build && next build",
+    "now-build": "yarn rescript:build && next build",
+    "export": "next export",
+    "start": "next start -p $PORT"
+  },
+  "dependencies": {
+    "next": "10.2.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@rescript/react": "0.10.3",
+    "autoprefixer": "10.1.0",
+    "cssnano": "5.0.5",
+    "gentype": "4.1",
+    "next-transpile-modules": "7.1.2",
+    "postcss": "8.2.15",
+    "postcss-cli": "8.3.1",
+    "rescript": "9.1",
+    "tailwindcss": "2.0.4"
+  }
+}
