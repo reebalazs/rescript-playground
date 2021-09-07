@@ -12,7 +12,7 @@ let default = (props: props) =>
 let getServerSideProps = _ctx => {
   let props = {
     msg: "This page was rendered dynamically with getServerSideProps.",
-    href: "https://github.com/reebalazs/rescript-playground",
+    href: "https://github.com/reebalazs/rescript-playground/blob/master/packages/nextjs-web/src/Examples.res",
   }
   Js.Promise.resolve({"props": props})
 }
