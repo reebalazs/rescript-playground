@@ -10,5 +10,3 @@ Current focuses are:
 
 - A NextJS application with Rescript and React (also combining the other apps)
   - Deployed on Vercel
-
-I am not supporting this code right now, which means that errors will not be fixed.
