@@ -45,7 +45,7 @@
     "jest-environment-node": "^27.0.3",
     "react-hot-loader": "^4.13.0",
     "react-test-renderer": "^17.0.2",
-    "webpack": "^5.39.1",
+    "webpack": "^5.76.0",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2",
     "webpack-stream": "^6.1.2"
